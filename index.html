@@ -230,9 +230,9 @@
     .title h1 { font-size: 1.55rem; }
     .tagline { font-size: clamp(.58rem, 2.8vw, .8rem); letter-spacing: 1px; padding: 6px 12px; margin-top: 10px; }
     .card { padding: 24px; }
-    .contact { gap: 16px; }
-    .contact-item { padding: 14px 20px 14px 16px; max-width: 100%; box-sizing: border-box; }
-    .contact-item strong { font-size: 1.1rem; word-break: break-word; }
+    .contact { gap: 16px; flex-direction: column; align-items: stretch; }
+    .contact-item { padding: 14px 20px 14px 16px; width: 100%; box-sizing: border-box; justify-content: flex-start; }
+    .contact-item strong { font-size: 1.1rem; word-break: break-all; }
   }
 </style>
 </head>
@@ -313,17 +313,17 @@
   <section>
     <h2 class="section-title" style="border:none;display:block;">Follow Us</h2>
     <div class="social-grid">
-      <!-- FACEBOOK: paste your Facebook page link in place of the # -->
+      <!-- FACEBOOK -->
       <a class="social-box" href="https://www.facebook.com/profile.php?id=61594482038161" target="_blank" rel="noopener">
         <div class="icon"><b>f</b></div>Facebook
       </a>
-      <!-- INSTAGRAM: paste your Instagram page link in place of the # -->
+      <!-- INSTAGRAM -->
       <a class="social-box" href="https://www.instagram.com/bisc_1stgen/" target="_blank" rel="noopener">
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg>
         </div>Instagram
       </a>
-      <!-- TIKTOK: paste your TikTok page link in place of the # -->
+      <!-- TIKTOK -->
       <a class="social-box" href="https://www.tiktok.com/@buv.bisc1stgen" target="_blank" rel="noopener">
         <div class="icon">♪</div>TikTok
       </a>
@@ -334,6 +334,8 @@
   <section>
     <h2 class="section-title" style="border:none;display:block;">Contact Us</h2>
     <div class="contact">
+      
+      <!-- Nút Phone -->
       <a class="contact-item" href="tel:+84862516254">
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
@@ -344,6 +346,7 @@
         </div>
       </a>
       
+      <!-- Nút Email mới -->
       <a class="contact-item" href="mailto:buv.int.studentclub@gmail.com">
         <div class="icon">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -353,6 +356,7 @@
           <strong>buv.int.studentclub@gmail.com</strong>
         </div>
       </a>
+
     </div>
   </section>
 
