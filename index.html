@@ -196,7 +196,7 @@
   .icon svg { width: 30px; height: 30px; }
 
   /* ---------- Contact ---------- */
-  .contact { display: flex; justify-content: center; }
+  .contact { display: flex; justify-content: center; flex-wrap: wrap; gap: 24px; }
   .contact-item {
     display: flex; align-items: center; gap: 20px;
     background: var(--main);
@@ -206,7 +206,7 @@
     color: var(--white);
     text-decoration: none;
   }
-  .contact-item .icon { width: 64px; height: 64px; }
+  .contact-item .icon { width: 64px; height: 64px; flex-shrink: 0; }
   .contact-item span { display: block; font-size: .85rem; opacity: .75; text-transform: uppercase; letter-spacing: 1px; }
   .contact-item strong { font-size: 1.6rem; }
 
@@ -230,8 +230,9 @@
     .title h1 { font-size: 1.55rem; }
     .tagline { font-size: clamp(.58rem, 2.8vw, .8rem); letter-spacing: 1px; padding: 6px 12px; margin-top: 10px; }
     .card { padding: 24px; }
-    .contact-item { padding: 14px 24px 14px 16px; }
-    .contact-item strong { font-size: 1.2rem; }
+    .contact { gap: 16px; }
+    .contact-item { padding: 14px 20px 14px 16px; max-width: 100%; box-sizing: border-box; }
+    .contact-item strong { font-size: 1.1rem; word-break: break-word; }
   }
 </style>
 </head>
@@ -340,6 +341,16 @@
         <div>
           <span>Phone</span>
           <strong>+84 86 2516254</strong>
+        </div>
+      </a>
+      
+      <a class="contact-item" href="mailto:buv.int.studentclub@gmail.com">
+        <div class="icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <div>
+          <span>Email</span>
+          <strong>buv.int.studentclub@gmail.com</strong>
         </div>
       </a>
     </div>
